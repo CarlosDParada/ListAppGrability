@@ -18,6 +18,8 @@
 		D9DCF4B91DA56CA300D95D47 /* LAGWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF4B81DA56CA300D95D47 /* LAGWebservice.swift */; };
 		D9DCF4BB1DA56CB200D95D47 /* LAGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF4BA1DA56CB200D95D47 /* LAGColors.swift */; };
 		D9DCF4BD1DA56CC300D95D47 /* LAGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF4BC1DA56CC300D95D47 /* LAGConstants.swift */; };
+		D9DCF4D21DA570B900D95D47 /* iphoneLand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DCF4D11DA570B900D95D47 /* iphoneLand@2x.png */; };
+		D9DCF4D91DA597FE00D95D47 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF4D81DA597FE00D95D47 /* AppModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +166,8 @@
 		D9DCF4B81DA56CA300D95D47 /* LAGWebservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGWebservice.swift; sourceTree = "<group>"; };
 		D9DCF4BA1DA56CB200D95D47 /* LAGColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGColors.swift; sourceTree = "<group>"; };
 		D9DCF4BC1DA56CC300D95D47 /* LAGConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGConstants.swift; sourceTree = "<group>"; };
+		D9DCF4D11DA570B900D95D47 /* iphoneLand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphoneLand@2x.png"; sourceTree = "<group>"; };
+		D9DCF4D81DA597FE00D95D47 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +202,9 @@
 		D9DCF4691DA56B5800D95D47 /* ListAppGrability */ = {
 			isa = PBXGroup;
 			children = (
+				D9DCF4D71DA597DE00D95D47 /* Model */,
 				D9DCF4B71DA56C8200D95D47 /* Utilities */,
+				D9DCF4D31DA570C600D95D47 /* Image */,
 				D9DCF4B61DA56C7B00D95D47 /* WebService */,
 				D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */,
 				D9DCF46C1DA56B5800D95D47 /* ViewController.swift */,
@@ -254,6 +260,22 @@
 				D9DCF4BC1DA56CC300D95D47 /* LAGConstants.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D9DCF4D31DA570C600D95D47 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D9DCF4D11DA570B900D95D47 /* iphoneLand@2x.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		D9DCF4D71DA597DE00D95D47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9DCF4D81DA597FE00D95D47 /* AppModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +454,7 @@
 			files = (
 				D9DCF4751DA56B5800D95D47 /* LaunchScreen.storyboard in Resources */,
 				D9DCF4B51DA56C2D00D95D47 /* MainIpad.storyboard in Resources */,
+				D9DCF4D21DA570B900D95D47 /* iphoneLand@2x.png in Resources */,
 				D9DCF4721DA56B5800D95D47 /* Assets.xcassets in Resources */,
 				D9DCF4701DA56B5800D95D47 /* Main.storyboard in Resources */,
 			);
@@ -445,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9DCF4BB1DA56CB200D95D47 /* LAGColors.swift in Sources */,
+				D9DCF4D91DA597FE00D95D47 /* AppModel.swift in Sources */,
 				D9DCF46D1DA56B5800D95D47 /* ViewController.swift in Sources */,
 				D9DCF46B1DA56B5800D95D47 /* AppDelegate.swift in Sources */,
 				D9DCF4BD1DA56CC300D95D47 /* LAGConstants.swift in Sources */,

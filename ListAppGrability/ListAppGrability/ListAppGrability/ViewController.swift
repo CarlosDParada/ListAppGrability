@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        LAGWebService.isServerAlive(onSuccess: { (respondeJSON) in
+            print("JSON: \(respondeJSON)")
+            }) { (error) in
+                
+        }
     }
 
     override func didReceiveMemoryWarning() {
