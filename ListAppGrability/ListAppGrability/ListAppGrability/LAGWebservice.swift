@@ -19,24 +19,27 @@ public class LAGWebService: NSObject {
 
     static public func isServerAlive(onSuccess: (Bool) -> Void, onError: (String?) -> Void) {
         
-        Alamofire.request(LAGConstants.Webservice.PathInit, method: .post, parameters: nil, encoding: JSONEncoding.default).responseJSON { response in
+        Alamofire.request(.GET, LAGConstants.Webservice.PathInit, parameters: nil)
+            .responseJSON { response in
+                debugPrint(response)     // prints detailed description of all response properties
             
             print(response.request)  // original URL request
             print(response.response) // HTTP URL response
             print(response.data)     // server data
             print(response.result)   // result of response serialization
             switch response.result {
-            case .success:
+            case .Success:
                 print("Success: \(response.result.isSuccess)")
                 if let result = response.result.value {
                     let JSONResult = result as! NSDictionary
                     print(JSONResult)
-                    let AppTest = Mapper<AppModel>().map(JSONString: JSONResult)
+                    let AppTest = Mapper<AppModel>().map(JSONResult)
+                    print("AppTest: \(AppTest)")
                 }
                
                // LAGWebService.sharedInstance.isAlive = (response.result == "SUCCESS")
                // onSuccess(response.result.value == "true")
-            case .failure:
+            case .Failure:
                   print("Success: \(response.result.isFailure)")
             }
             debugPrint(response)

@@ -19,7 +19,7 @@ class AppModel: Mappable {
     }
     
     // MARK: Mappable
-    required init?(map: Map) {
+    required init?(_ map: Map) {
         // subClasses must call the constructor of the base class
         // super.init(map)
         //self.init()
