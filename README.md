@@ -14,8 +14,8 @@ https://itunes.apple.com/us/rss/topfreeapplications/limit=20/json
 
 
 ## Embedded Framework ##
-# Alamofire #
+### Alamofire ###
 $ git submodule add https://github.com/Alamofire/Alamofire.git
 
-# ObjectMapper #
+### ObjectMapper ###
 $ git submodule add https://github.com/Hearst-DD/ObjectMapper.git
