@@ -14,6 +14,10 @@
 		D9DCF4751DA56B5800D95D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DCF4731DA56B5800D95D47 /* LaunchScreen.storyboard */; };
 		D9DCF4B21DA56B9200D95D47 /* ObjectMapper.framework in New Copy Files Phase */ = {isa = PBXBuildFile; fileRef = D9DCF4A01DA56B7900D95D47 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9DCF4B31DA56B9500D95D47 /* Alamofire.framework in New Copy Files Phase */ = {isa = PBXBuildFile; fileRef = D9DCF4881DA56B7300D95D47 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9DCF4B51DA56C2D00D95D47 /* MainIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DCF4B41DA56C2D00D95D47 /* MainIpad.storyboard */; };
+		D9DCF4B91DA56CA300D95D47 /* LAGWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF4B81DA56CA300D95D47 /* LAGWebservice.swift */; };
+		D9DCF4BB1DA56CB200D95D47 /* LAGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF4BA1DA56CB200D95D47 /* LAGColors.swift */; };
+		D9DCF4BD1DA56CC300D95D47 /* LAGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF4BC1DA56CC300D95D47 /* LAGConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +160,10 @@
 		D9DCF4761DA56B5800D95D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9DCF47C1DA56B7300D95D47 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		D9DCF4951DA56B7800D95D47 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ../../ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
+		D9DCF4B41DA56C2D00D95D47 /* MainIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainIpad.storyboard; sourceTree = "<group>"; };
+		D9DCF4B81DA56CA300D95D47 /* LAGWebservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGWebservice.swift; sourceTree = "<group>"; };
+		D9DCF4BA1DA56CB200D95D47 /* LAGColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGColors.swift; sourceTree = "<group>"; };
+		D9DCF4BC1DA56CC300D95D47 /* LAGConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,12 +198,15 @@
 		D9DCF4691DA56B5800D95D47 /* ListAppGrability */ = {
 			isa = PBXGroup;
 			children = (
+				D9DCF4B71DA56C8200D95D47 /* Utilities */,
+				D9DCF4B61DA56C7B00D95D47 /* WebService */,
 				D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */,
 				D9DCF46C1DA56B5800D95D47 /* ViewController.swift */,
 				D9DCF46E1DA56B5800D95D47 /* Main.storyboard */,
-				D9DCF4711DA56B5800D95D47 /* Assets.xcassets */,
+				D9DCF4B41DA56C2D00D95D47 /* MainIpad.storyboard */,
 				D9DCF4731DA56B5800D95D47 /* LaunchScreen.storyboard */,
 				D9DCF4761DA56B5800D95D47 /* Info.plist */,
+				D9DCF4711DA56B5800D95D47 /* Assets.xcassets */,
 			);
 			path = ListAppGrability;
 			sourceTree = "<group>";
@@ -226,6 +237,23 @@
 				D9DCF4AC1DA56B7900D95D47 /* ObjectMapper-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D9DCF4B61DA56C7B00D95D47 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				D9DCF4B81DA56CA300D95D47 /* LAGWebservice.swift */,
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
+		D9DCF4B71DA56C8200D95D47 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D9DCF4BA1DA56CB200D95D47 /* LAGColors.swift */,
+				D9DCF4BC1DA56CC300D95D47 /* LAGConstants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9DCF4751DA56B5800D95D47 /* LaunchScreen.storyboard in Resources */,
+				D9DCF4B51DA56C2D00D95D47 /* MainIpad.storyboard in Resources */,
 				D9DCF4721DA56B5800D95D47 /* Assets.xcassets in Resources */,
 				D9DCF4701DA56B5800D95D47 /* Main.storyboard in Resources */,
 			);
@@ -415,8 +444,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DCF4BB1DA56CB200D95D47 /* LAGColors.swift in Sources */,
 				D9DCF46D1DA56B5800D95D47 /* ViewController.swift in Sources */,
 				D9DCF46B1DA56B5800D95D47 /* AppDelegate.swift in Sources */,
+				D9DCF4BD1DA56CC300D95D47 /* LAGConstants.swift in Sources */,
+				D9DCF4B91DA56CA300D95D47 /* LAGWebservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
