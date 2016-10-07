@@ -34,8 +34,10 @@ public class LAGWebService: NSObject {
                     let JSONResult = result as! NSDictionary
                     print(JSONResult)
                     let AppTest = Mapper<ResponseModel>().map(JSONResult)
+                    let responseOK : ResponseModel!
+                    responseOK = AppTest
                     print("AppTest: \(AppTest?.author)")
-                    onSuccess(AppTest!)
+                    onSuccess(responseOK)
                 }
                
                // LAGWebService.sharedInstance.isAlive = (response.result == "SUCCESS")

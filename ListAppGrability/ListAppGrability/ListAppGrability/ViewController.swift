@@ -10,19 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textView1: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         var responseWS : ResponseModel!
         // Do any additional setup after loading the view, typically from a nib.
         LAGWebService.isServerAlive({ (respondeJSON) in
-            print("JSON: \(respondeJSON)")
-            responseWS = respondeJSON
+  //          print("JSON: \(respondeJSON)")
+            let aStr = String(format: "%@%@", "Response: \n\n", respondeJSON.toJSONString(true)!)
+            self.textView1.text = aStr
             
+            responseWS = respondeJSON
+            let stateSaveAll: Bool = CoreDataController().saveAllDataInCoreData(responseWS)
+            if stateSaveAll == true{
+                /// User SAVE OK
+                let arrayLinksCD : Array = CoreDataController().getAllLink()
+                print("Link's in CoreData \(arrayLinksCD.count )")
+                //self.performSegueWithIdentifier(AMSConstants.Menu.kSegueMenuLog, sender: nil)
+            }else{
+               // Error
+            }
             
             }) { (error) in
                 print("Error\(error) ")
         }
-        CoreDataController().saveAllDataInCoreData(ResponseModel)
     }
 
     override func didReceiveMemoryWarning() {

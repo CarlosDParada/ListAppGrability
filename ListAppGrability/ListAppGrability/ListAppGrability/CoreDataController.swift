@@ -15,12 +15,16 @@ public class CoreDataController: NSObject {
     var managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     // MARK: - USER
     
-    func saveLink(rel: String, type: String , href : String) -> Bool {
+    func saveLink(rel: String?, type: String? , href : String?) -> Bool {
         
         let newItem = NSEntityDescription.insertNewObjectForEntityForName("Link", inManagedObjectContext: managedObjectContext) as! Link
-        newItem.rel = rel
-        newItem.type = type
-        newItem.href = href
+        
+        if (rel != nil) {
+            newItem.rel = rel }
+        if (type != nil) {
+            newItem.type = type }
+        if( href != nil){
+            newItem.href = href }
         do {
             try newItem.managedObjectContext?.save()
             return true
@@ -35,7 +39,8 @@ public class CoreDataController: NSObject {
         if let response : ResponseModel = responseWB{
             print("response \n \(response) ")
             for linkWS in response.link! {
-                CoreDataController().saveLink( linkWS.rel! , type: linkWS.type! , href: linkWS.href! )
+                print("link unique \(linkWS.rel)")
+                CoreDataController().saveLink( linkWS.rel  , type: linkWS.type , href: linkWS.href  )
             }
             
             return true
