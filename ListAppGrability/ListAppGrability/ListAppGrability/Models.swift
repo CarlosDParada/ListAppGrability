@@ -75,7 +75,7 @@ class AppModel: Mappable {
     var name: String?
     var images: [ImageModel]? //Array
     var summary : String?
-    var price : Double!
+    var price : Float!
     var currency : String?
     var contentType : String?
     var rights : String?
@@ -88,7 +88,7 @@ class AppModel: Mappable {
     var category : CategoryModel?
     var releaseDate : String?
  
-    init(name: String, images: [ImageModel] ,summary : String , price : Double , currency : String , contentType : String , rights : String , title : String , linkHref : String , idUrl : String , idId : String , idBundle : String , artist :ArtistModel ,category: CategoryModel ,releaseDate : String ) {
+    init(name: String, images: [ImageModel] ,summary : String , price : Float , currency : String , contentType : String , rights : String , title : String , linkHref : String , idUrl : String , idId : String , idBundle : String , artist :ArtistModel ,category: CategoryModel ,releaseDate : String ) {
         self.name = name
         self.images = images
         self.summary = summary

@@ -17,7 +17,7 @@ public class LAGWebService: NSObject {
     }()
     public var isAlive: Bool = false
 
-    static public func isServerAlive(onSuccess: (Bool) -> Void, onError: (String?) -> Void) {
+    static func isServerAlive(onSuccess: (ResponseModel) -> Void, onError: (String?) -> Void) {
         
         Alamofire.request(.GET, LAGConstants.Webservice.PathInit, parameters: nil)
             .responseJSON { response in
@@ -35,6 +35,7 @@ public class LAGWebService: NSObject {
                     print(JSONResult)
                     let AppTest = Mapper<ResponseModel>().map(JSONResult)
                     print("AppTest: \(AppTest?.author)")
+                    onSuccess(AppTest!)
                 }
                
                // LAGWebService.sharedInstance.isAlive = (response.result == "SUCCESS")
@@ -51,25 +52,7 @@ public class LAGWebService: NSObject {
         
     }
     
-    static public func getAllDataWebService(onSuccess: (Bool) -> Void, onError: (String?) -> Void){
-        
-        Alamofire.request(.GET, "http://httpbin.org/get", parameters: ["foo": "bar"])
-            .responseJSON { response in
-                debugPrint(response)     // prints detailed description of all response properties
-                
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
-                
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
-                    let JSONResult = JSON as! NSDictionary
-                    print(JSONResult)
-                    let AppTest = Mapper<AppModel>().map(JSONResult)
 
-                }
-        }
-    }
+ 
 
 }

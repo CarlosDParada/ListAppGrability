@@ -12,12 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var responseWS : ResponseModel!
         // Do any additional setup after loading the view, typically from a nib.
         LAGWebService.isServerAlive({ (respondeJSON) in
             print("JSON: \(respondeJSON)")
+            responseWS = respondeJSON
+            
+            
             }) { (error) in
-                
+                print("Error\(error) ")
         }
+        CoreDataController().saveAllDataInCoreData(ResponseModel)
     }
 
     override func didReceiveMemoryWarning() {

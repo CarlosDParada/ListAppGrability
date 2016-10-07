@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Application" representedClassName=".Application" syncable="YES">
+        <attribute name="contentType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idBundle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkHref" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rights" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="artist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Artist" inverseName="application" inverseEntity="Artist" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="application" inverseEntity="Category" syncable="YES"/>
+        <relationship name="image" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="application" inverseEntity="Image" syncable="YES"/>
+        <relationship name="responseJSON" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Response" inverseName="entry" inverseEntity="Response" syncable="YES"/>
+    </entity>
+    <entity name="Artist" representedClassName=".Artist" syncable="YES">
+        <attribute name="nameArtist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlArtist" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="application" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Application" inverseName="artist" inverseEntity="Application" syncable="YES"/>
+    </entity>
+    <entity name="Category" representedClassName=".Category" syncable="YES">
+        <attribute name="idCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schemeCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="termCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="application" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Application" inverseName="category" inverseEntity="Application" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName=".Image" syncable="YES">
+        <attribute name="dataImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="heightImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlIamge" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="application" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Application" inverseName="image" inverseEntity="Application" syncable="YES"/>
+    </entity>
+    <entity name="Link" representedClassName=".Link" syncable="YES">
+        <attribute name="href" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="responseJSON" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Response" inverseName="link" inverseEntity="Response" syncable="YES"/>
+    </entity>
+    <entity name="Response" representedClassName=".Response" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iconURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idResponse" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rights" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tittle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedD" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="entry" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="responseJSON" inverseEntity="Application" syncable="YES"/>
+        <relationship name="link" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Link" inverseName="responseJSON" inverseEntity="Link" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Artist" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Category" positionX="-54" positionY="9" width="128" height="120"/>
+        <element name="Image" positionX="-36" positionY="45" width="128" height="105"/>
+        <element name="Application" positionX="-18" positionY="63" width="128" height="285"/>
+        <element name="Response" positionX="0" positionY="171" width="128" height="180"/>
+        <element name="Link" positionX="18" positionY="180" width="128" height="105"/>
+    </elements>
+</model>
