@@ -10,10 +10,12 @@
 		0BEEF6A41B5A3B714548B48A /* Pods_ListAppGrability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8AD50C544E1572BAD18710 /* Pods_ListAppGrability.framework */; };
 		D90F99F51DAB44D30008E975 /* LAGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F99F41DAB44D30008E975 /* LAGHomeViewController.swift */; };
 		D90F99FA1DAB4EBD0008E975 /* LAGCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90F99F91DAB4EBD0008E975 /* LAGCell.xib */; };
-		D90F99FC1DAB54260008E975 /* LAGCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F99FB1DAB54260008E975 /* LAGCellTableViewCell.swift */; };
+		D90F99FC1DAB54260008E975 /* LAGCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F99FB1DAB54260008E975 /* LAGCells.swift */; };
 		D90F99FE1DAB63620008E975 /* UIImageView+AFNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F99FD1DAB63620008E975 /* UIImageView+AFNetworking.swift */; };
 		D90F9A001DAB7FAF0008E975 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F99FF1DAB7FAF0008E975 /* GradientView.swift */; };
 		D90F9A061DAB956F0008E975 /* LAGCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90F9A051DAB956F0008E975 /* LAGCategoryCell.xib */; };
+		D90F9A0C1DABCF640008E975 /* LagDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90F9A0B1DABCF640008E975 /* LagDetailCell.xib */; };
+		D90F9A0E1DABD2540008E975 /* LAGDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F9A0D1DABD2540008E975 /* LAGDetailViewController.swift */; };
 		D9DCF46B1DA56B5800D95D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */; };
 		D9DCF46D1DA56B5800D95D47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF46C1DA56B5800D95D47 /* ViewController.swift */; };
 		D9DCF4701DA56B5800D95D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DCF46E1DA56B5800D95D47 /* Main.storyboard */; };
@@ -77,10 +79,12 @@
 		90BFB3B09005E118BDF53EB9 /* Pods-ListAppGrability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListAppGrability.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListAppGrability/Pods-ListAppGrability.release.xcconfig"; sourceTree = "<group>"; };
 		D90F99F41DAB44D30008E975 /* LAGHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGHomeViewController.swift; sourceTree = "<group>"; };
 		D90F99F91DAB4EBD0008E975 /* LAGCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAGCell.xib; sourceTree = "<group>"; };
-		D90F99FB1DAB54260008E975 /* LAGCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGCellTableViewCell.swift; sourceTree = "<group>"; };
+		D90F99FB1DAB54260008E975 /* LAGCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGCells.swift; sourceTree = "<group>"; };
 		D90F99FD1DAB63620008E975 /* UIImageView+AFNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+AFNetworking.swift"; sourceTree = "<group>"; };
 		D90F99FF1DAB7FAF0008E975 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D90F9A051DAB956F0008E975 /* LAGCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAGCategoryCell.xib; sourceTree = "<group>"; };
+		D90F9A0B1DABCF640008E975 /* LagDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LagDetailCell.xib; sourceTree = "<group>"; };
+		D90F9A0D1DABD2540008E975 /* LAGDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGDetailViewController.swift; sourceTree = "<group>"; };
 		D9DCF4671DA56B5800D95D47 /* ListAppGrability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListAppGrability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DCF46C1DA56B5800D95D47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,10 +163,22 @@
 		D90D5B0E1DA76F9500D37D1E /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				D9DCF4731DA56B5800D95D47 /* LaunchScreen.storyboard */,
 				D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */,
 				D9DCF4761DA56B5800D95D47 /* Info.plist */,
 			);
 			name = Control;
+			sourceTree = "<group>";
+		};
+		D90F9A0A1DABCF010008E975 /* Sopport */ = {
+			isa = PBXGroup;
+			children = (
+				D90F99F91DAB4EBD0008E975 /* LAGCell.xib */,
+				D90F9A051DAB956F0008E975 /* LAGCategoryCell.xib */,
+				D90F99FB1DAB54260008E975 /* LAGCells.swift */,
+				D90F9A0B1DABCF640008E975 /* LagDetailCell.xib */,
+			);
+			name = Sopport;
 			sourceTree = "<group>";
 		};
 		D9DCF45E1DA56B5800D95D47 = {
@@ -189,11 +205,9 @@
 				D9DCF46C1DA56B5800D95D47 /* ViewController.swift */,
 				D90F99F41DAB44D30008E975 /* LAGHomeViewController.swift */,
 				D9DCF46E1DA56B5800D95D47 /* Main.storyboard */,
+				D90F9A0D1DABD2540008E975 /* LAGDetailViewController.swift */,
 				D9DCF4B41DA56C2D00D95D47 /* MainIpad.storyboard */,
-				D9DCF4731DA56B5800D95D47 /* LaunchScreen.storyboard */,
-				D90F99F91DAB4EBD0008E975 /* LAGCell.xib */,
-				D90F9A051DAB956F0008E975 /* LAGCategoryCell.xib */,
-				D90F99FB1DAB54260008E975 /* LAGCellTableViewCell.swift */,
+				D90F9A0A1DABCF010008E975 /* Sopport */,
 				D9DCF4D71DA597DE00D95D47 /* Model */,
 				D9DCF4B71DA56C8200D95D47 /* Utilities */,
 				D9DCF4B61DA56C7B00D95D47 /* WebService */,
@@ -372,6 +386,7 @@
 				D9DCF4F21DA5BA5400D95D47 /* Icon-App-40x40@1x.png in Resources */,
 				D9DCF4EC1DA5BA5400D95D47 /* Icon-App-20x20@1x.png in Resources */,
 				D9DCF4F41DA5BA5400D95D47 /* Icon-App-40x40@3x.png in Resources */,
+				D90F9A0C1DABCF640008E975 /* LagDetailCell.xib in Resources */,
 				D9DCF4F31DA5BA5400D95D47 /* Icon-App-40x40@2x.png in Resources */,
 				D90F9A061DAB956F0008E975 /* LAGCategoryCell.xib in Resources */,
 				D9DCF4EF1DA5BA5400D95D47 /* Icon-App-29x29@1x.png in Resources */,
@@ -446,9 +461,10 @@
 				D9DCF5741DA7521000D95D47 /* Response+CoreDataProperties.swift in Sources */,
 				D9DCF4BD1DA56CC300D95D47 /* LAGConstants.swift in Sources */,
 				D9DCF5771DA7521000D95D47 /* Image+CoreDataClass.swift in Sources */,
+				D90F9A0E1DABD2540008E975 /* LAGDetailViewController.swift in Sources */,
 				D9DCF5761DA7521000D95D47 /* Link+CoreDataProperties.swift in Sources */,
 				D90F9A001DAB7FAF0008E975 /* GradientView.swift in Sources */,
-				D90F99FC1DAB54260008E975 /* LAGCellTableViewCell.swift in Sources */,
+				D90F99FC1DAB54260008E975 /* LAGCells.swift in Sources */,
 				D9DCF4B91DA56CA300D95D47 /* LAGWebservice.swift in Sources */,
 				D9DCF5721DA7521000D95D47 /* Category+CoreDataProperties.swift in Sources */,
 				D9DCF5791DA7521000D95D47 /* Artist+CoreDataClass.swift in Sources */,

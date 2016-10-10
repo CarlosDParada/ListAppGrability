@@ -27,8 +27,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-g2-cW1"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinterest" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIX-n0-RAe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinterest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIX-n0-RAe">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="jXc-ap-sNg"/>
                                 </constraints>
@@ -39,12 +38,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="RIX-n0-RAe" secondAttribute="trailing" constant="57" id="MTi-5j-SoO"/>
+                            <constraint firstAttribute="trailing" secondItem="RIX-n0-RAe" secondAttribute="trailing" constant="69" id="MTi-5j-SoO"/>
                             <constraint firstItem="RIX-n0-RAe" firstAttribute="top" secondItem="hEY-ES-zmn" secondAttribute="top" constant="11" id="QAe-DT-jKO"/>
                             <constraint firstItem="odj-Mu-2N4" firstAttribute="leading" secondItem="hEY-ES-zmn" secondAttribute="leadingMargin" id="R8i-SA-vGW"/>
-                            <constraint firstItem="nRb-g2-cW1" firstAttribute="centerY" secondItem="RIX-n0-RAe" secondAttribute="centerY" id="UFj-yK-DcV"/>
                             <constraint firstItem="odj-Mu-2N4" firstAttribute="centerY" secondItem="hEY-ES-zmn" secondAttribute="centerY" id="XDd-16-fM6"/>
-                            <constraint firstItem="nRb-g2-cW1" firstAttribute="trailing" secondItem="hEY-ES-zmn" secondAttribute="trailingMargin" id="h2H-QO-G5B"/>
                             <constraint firstItem="odj-Mu-2N4" firstAttribute="centerY" secondItem="RIX-n0-RAe" secondAttribute="centerY" id="i3E-Cy-U3I"/>
                             <constraint firstItem="odj-Mu-2N4" firstAttribute="top" secondItem="hEY-ES-zmn" secondAttribute="top" constant="4" id="x0W-XF-8uC"/>
                         </constraints>
@@ -65,7 +62,6 @@
             <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
             <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
             <connections>
-                <outlet property="butonHelp" destination="nRb-g2-cW1" id="iZj-zz-5zk"/>
                 <outlet property="imageCateView" destination="odj-Mu-2N4" id="lTc-SK-bGK"/>
                 <outlet property="nameCateLabel" destination="RIX-n0-RAe" id="Idd-rB-rzX"/>
                 <outlet property="viewBack" destination="hEY-ES-zmn" id="y8f-M3-RmT"/>

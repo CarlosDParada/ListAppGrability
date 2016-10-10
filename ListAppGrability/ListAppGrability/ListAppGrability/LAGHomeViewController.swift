@@ -58,6 +58,18 @@ class LAGHomeViewController: UIViewController , UITableViewDelegate , UITableVie
         
        
     }
+    override func viewDidAppear(animated: Bool)
+    {
+        UIView.animateWithDuration(1.5, delay: 0.0,
+                                   usingSpringWithDamping: 0.3,
+                                   initialSpringVelocity: 0.5,
+                                   options: [], animations: {
+//                                    let viewCateBound : bonds
+                                    self.viewCategory.center.x = 94
+                                    self.viewApplication.center.x = 282
+            }, completion: nil)
+    }
+    
     func checkStateTableView() -> Void {
         if self.stateTableView == false {
             viewCategory.layer.cornerRadius = 10.0
@@ -72,10 +84,12 @@ class LAGHomeViewController: UIViewController , UITableViewDelegate , UITableVie
             viewApplication.layer.borderColor = UIColor.whiteColor().CGColor
             viewApplication.backgroundColor = UIColor.clearColor()
             appButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-            //indAppView.backgroundColor = UIColor.clearColor()
+            indAppView.backgroundColor = UIColor.clearColor()
             
             
-            
+            UIView.animateWithDuration(1.0, animations: {
+                self.indCateView.center.x = 94
+            })
             
             
         }else{
@@ -84,15 +98,18 @@ class LAGHomeViewController: UIViewController , UITableViewDelegate , UITableVie
             viewCategory.layer.borderColor = UIColor.whiteColor().CGColor
             viewCategory.backgroundColor = UIColor.clearColor()
             cateButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-            indCateView.backgroundColor = UIColor.clearColor()
+            indCateView.backgroundColor = UIColor.mediumBlue
             
             viewApplication.layer.cornerRadius = 10.0
             viewApplication.layer.borderWidth = 0.0
             viewApplication.layer.borderColor = UIColor.clearColor().CGColor
             viewApplication.backgroundColor = UIColor.greyDisable
             appButton.setTitleColor(UIColor.mediumBlue, forState: UIControlState.Normal)
-           // indAppView.backgroundColor = UIColor.mediumBlue
+            indAppView.backgroundColor = UIColor.clearColor()
             
+            UIView.animateWithDuration(1.0, animations: {
+                self.indCateView.center.x = 282
+            })
         
         }
     }

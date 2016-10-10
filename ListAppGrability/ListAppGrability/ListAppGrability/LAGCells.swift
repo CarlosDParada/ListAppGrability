@@ -45,7 +45,6 @@ class LAGCAtegoryCellTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imageCateView: UIImageView!
     @IBOutlet weak var nameCateLabel: UILabel!
-    @IBOutlet weak var butonHelp: UIButton!
     @IBOutlet weak var viewBack: UIView!
     
     
@@ -70,5 +69,23 @@ class LAGCAtegoryCellTableViewCell: UITableViewCell {
         }
         
     }
+    
+}
+
+class LAGDetailCell: UITableViewCell {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descritionLabel: UIView!
+    
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+        self.viewBack.clipsToBounds = true
+        self.viewBack.layer.cornerRadius = 10
+    }
+    
+ 
     
 }
