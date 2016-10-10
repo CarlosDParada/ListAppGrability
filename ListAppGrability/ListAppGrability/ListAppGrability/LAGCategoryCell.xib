@@ -19,7 +19,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="odj-Mu-2N4">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="159" id="ypg-Mx-13q"/>
+                                    <constraint firstAttribute="width" constant="57" id="ypg-Mx-13q"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -27,6 +27,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-g2-cW1"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinterest" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIX-n0-RAe">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="jXc-ap-sNg"/>
@@ -35,11 +36,10 @@
                                 <color key="textColor" red="0.33239486369999999" green="0.33239486369999999" blue="0.33239486369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-g2-cW1"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="RIX-n0-RAe" secondAttribute="trailing" constant="27" id="MTi-5j-SoO"/>
+                            <constraint firstAttribute="trailing" secondItem="RIX-n0-RAe" secondAttribute="trailing" constant="57" id="MTi-5j-SoO"/>
                             <constraint firstItem="RIX-n0-RAe" firstAttribute="top" secondItem="hEY-ES-zmn" secondAttribute="top" constant="11" id="QAe-DT-jKO"/>
                             <constraint firstItem="odj-Mu-2N4" firstAttribute="leading" secondItem="hEY-ES-zmn" secondAttribute="leadingMargin" id="R8i-SA-vGW"/>
                             <constraint firstItem="nRb-g2-cW1" firstAttribute="centerY" secondItem="RIX-n0-RAe" secondAttribute="centerY" id="UFj-yK-DcV"/>

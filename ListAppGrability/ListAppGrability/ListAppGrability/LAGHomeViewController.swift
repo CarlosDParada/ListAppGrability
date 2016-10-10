@@ -28,13 +28,17 @@ class LAGHomeViewController: UIViewController , UITableViewDelegate , UITableVie
     @IBOutlet weak var viewMiddleHome: UIView!
     
     
+    @IBOutlet weak var viewApplication: UIView!
     @IBOutlet weak var appButton: UIButton!
+    @IBOutlet weak var indAppView: UIView!
+    @IBOutlet weak var viewCategory: UIView!
     @IBOutlet weak var cateButton: UIButton!
+    @IBOutlet weak var indCateView: UIView!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.checkStateTableView()
         self.tableView.registerNib(UINib(nibName: "LAGCell", bundle: nil), forCellReuseIdentifier: "myLAGCell")
         self.tableView.registerNib(UINib(nibName: "LAGCategoryCell", bundle: nil), forCellReuseIdentifier: "myLAGCategoryCell")
         let gradient: CAGradientLayer = CAGradientLayer()
@@ -53,6 +57,44 @@ class LAGHomeViewController: UIViewController , UITableViewDelegate , UITableVie
         //then make a action method :
         
        
+    }
+    func checkStateTableView() -> Void {
+        if self.stateTableView == false {
+            viewCategory.layer.cornerRadius = 10.0
+            viewCategory.layer.borderWidth = 0.0
+            viewCategory.layer.borderColor = UIColor.clearColor().CGColor
+            viewCategory.backgroundColor = UIColor.greyDisable
+            cateButton.setTitleColor(UIColor.mediumBlue, forState: UIControlState.Normal)
+            indCateView.backgroundColor = UIColor.mediumBlue
+            
+            viewApplication.layer.cornerRadius = 10.0
+            viewApplication.layer.borderWidth = 2.0
+            viewApplication.layer.borderColor = UIColor.whiteColor().CGColor
+            viewApplication.backgroundColor = UIColor.clearColor()
+            appButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+            //indAppView.backgroundColor = UIColor.clearColor()
+            
+            
+            
+            
+            
+        }else{
+            viewCategory.layer.cornerRadius = 10.0
+            viewCategory.layer.borderWidth = 2.0
+            viewCategory.layer.borderColor = UIColor.whiteColor().CGColor
+            viewCategory.backgroundColor = UIColor.clearColor()
+            cateButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+            indCateView.backgroundColor = UIColor.clearColor()
+            
+            viewApplication.layer.cornerRadius = 10.0
+            viewApplication.layer.borderWidth = 0.0
+            viewApplication.layer.borderColor = UIColor.clearColor().CGColor
+            viewApplication.backgroundColor = UIColor.greyDisable
+            appButton.setTitleColor(UIColor.mediumBlue, forState: UIControlState.Normal)
+           // indAppView.backgroundColor = UIColor.mediumBlue
+            
+        
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -111,7 +153,7 @@ class LAGHomeViewController: UIViewController , UITableViewDelegate , UITableVie
         }else{
             let cell : LAGCAtegoryCellTableViewCell = tableView.dequeueReusableCellWithIdentifier("myLAGCategoryCell", forIndexPath: indexPath) as! LAGCAtegoryCellTableViewCell
             cell.nameCateLabel.text = arrayCategoryCD[indexPath.row].nameCategory
-            
+            cell.imageCateView.image = UIImage(named: "\(arrayCategoryCD[indexPath.row].nameCategory!)")
             
             return cell
         }
@@ -131,6 +173,7 @@ class LAGHomeViewController: UIViewController , UITableViewDelegate , UITableVie
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.tableView.reloadData()
             })
+            self.checkStateTableView()
         }else{
 //            self.stateTableView = true
 //            dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -148,6 +191,7 @@ class LAGHomeViewController: UIViewController , UITableViewDelegate , UITableVie
         }else{
            //
         }
+         self.checkStateTableView()
     }
     
 }

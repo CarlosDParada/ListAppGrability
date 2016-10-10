@@ -60,17 +60,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oka-Lu-wqp" userLabel="indCat">
                                         <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2I-Wg-rbO" userLabel="indApps">
-                                        <frame key="frameInset" width="188" height="5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OlK-um-Uk6" userLabel="Category">
-                                        <frame key="frameInset" minX="34" minY="18" width="120" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2I-Wg-rbO" userLabel="indApps"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlK-um-Uk6" userLabel="Category">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAE-Ax-ZLX">
-                                                <frame key="frameInset" width="120" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAE-Ax-ZLX">
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                                 <state key="normal" title="Category">
                                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,6 +75,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="WAE-Ax-ZLX" secondAttribute="trailing" id="49q-11-C44"/>
+                                            <constraint firstAttribute="height" constant="30" id="7vZ-jw-rq2"/>
+                                            <constraint firstAttribute="bottom" secondItem="WAE-Ax-ZLX" secondAttribute="bottom" id="ieL-gx-Gh5"/>
+                                            <constraint firstItem="WAE-Ax-ZLX" firstAttribute="leading" secondItem="OlK-um-Uk6" secondAttribute="leading" id="nTv-kW-4PF"/>
+                                            <constraint firstItem="WAE-Ax-ZLX" firstAttribute="top" secondItem="OlK-um-Uk6" secondAttribute="top" id="tjv-em-6yh"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="6"/>
@@ -94,13 +94,9 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o14-aR-pfk" userLabel="Apps">
-                                        <frame key="frameInset" minX="222" minY="18" width="120" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o14-aR-pfk" userLabel="Apps">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-ZR-iyq">
-                                                <frame key="frameInset" width="120" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-ZR-iyq">
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                                 <state key="normal" title="Application">
                                                     <color key="titleColor" red="0.066666666669999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,6 +109,13 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="kxQ-ZR-iyq" secondAttribute="trailing" id="Lry-zh-gs3"/>
+                                            <constraint firstAttribute="bottom" secondItem="kxQ-ZR-iyq" secondAttribute="bottom" id="bGJ-J8-wAj"/>
+                                            <constraint firstItem="kxQ-ZR-iyq" firstAttribute="top" secondItem="o14-aR-pfk" secondAttribute="top" id="bOd-Au-2R7"/>
+                                            <constraint firstAttribute="height" constant="30" id="d4q-tr-gpD"/>
+                                            <constraint firstItem="kxQ-ZR-iyq" firstAttribute="leading" secondItem="o14-aR-pfk" secondAttribute="leading" id="hhW-8t-jPv"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="6"/>
@@ -122,18 +125,27 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.32232661145185187" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Oka-Lu-wqp" secondAttribute="bottom" constant="55" id="A6h-Jl-adG"/>
-                                    <constraint firstAttribute="trailing" secondItem="Oka-Lu-wqp" secondAttribute="trailing" constant="-1" id="rf9-f7-ejf"/>
-                                    <constraint firstItem="Oka-Lu-wqp" firstAttribute="leading" secondItem="WCR-px-kZJ" secondAttribute="leading" constant="188" id="w5v-DQ-lbA"/>
-                                    <constraint firstItem="Oka-Lu-wqp" firstAttribute="top" secondItem="WCR-px-kZJ" secondAttribute="top" id="z42-Fa-jSw"/>
+                                    <constraint firstItem="OlK-um-Uk6" firstAttribute="leading" secondItem="WCR-px-kZJ" secondAttribute="leading" constant="34" id="17A-Vw-sOv"/>
+                                    <constraint firstItem="Oka-Lu-wqp" firstAttribute="leading" secondItem="U2I-Wg-rbO" secondAttribute="trailing" id="1X9-8h-AyW"/>
+                                    <constraint firstItem="U2I-Wg-rbO" firstAttribute="bottom" secondItem="Oka-Lu-wqp" secondAttribute="bottom" id="3Y3-wk-5hr"/>
+                                    <constraint firstItem="Oka-Lu-wqp" firstAttribute="centerX" secondItem="o14-aR-pfk" secondAttribute="centerX" id="6kk-IE-Jkw"/>
+                                    <constraint firstItem="U2I-Wg-rbO" firstAttribute="centerX" secondItem="OlK-um-Uk6" secondAttribute="centerX" id="984-sv-SNe"/>
+                                    <constraint firstItem="OlK-um-Uk6" firstAttribute="top" secondItem="WCR-px-kZJ" secondAttribute="top" constant="18" id="Frs-ga-F3g"/>
+                                    <constraint firstItem="Oka-Lu-wqp" firstAttribute="leading" secondItem="WCR-px-kZJ" secondAttribute="leading" constant="188" id="H2I-M2-ilF"/>
+                                    <constraint firstItem="U2I-Wg-rbO" firstAttribute="top" secondItem="WCR-px-kZJ" secondAttribute="top" id="NT8-bQ-Fhd"/>
+                                    <constraint firstItem="o14-aR-pfk" firstAttribute="leading" secondItem="OlK-um-Uk6" secondAttribute="trailing" constant="68" id="Yyq-lO-Gm0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oka-Lu-wqp" secondAttribute="trailing" constant="-1" id="Zj8-7K-cuJ"/>
+                                    <constraint firstItem="U2I-Wg-rbO" firstAttribute="leading" secondItem="WCR-px-kZJ" secondAttribute="leading" id="bPO-gm-811"/>
+                                    <constraint firstItem="OlK-um-Uk6" firstAttribute="bottom" secondItem="o14-aR-pfk" secondAttribute="bottom" id="h60-ms-mII"/>
+                                    <constraint firstAttribute="bottom" secondItem="OlK-um-Uk6" secondAttribute="bottom" constant="20" id="ih8-Bn-zYJ"/>
+                                    <constraint firstItem="OlK-um-Uk6" firstAttribute="top" secondItem="U2I-Wg-rbO" secondAttribute="bottom" constant="13" id="j19-Z6-SHU"/>
+                                    <constraint firstItem="U2I-Wg-rbO" firstAttribute="top" secondItem="Oka-Lu-wqp" secondAttribute="top" id="tKh-yT-V3b"/>
+                                    <constraint firstItem="OlK-um-Uk6" firstAttribute="top" secondItem="o14-aR-pfk" secondAttribute="top" id="tZY-9D-XMo"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="20" sectionFooterHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="dVq-cp-Kc6">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="543" id="P4M-LA-0dB"/>
-                                </constraints>
                                 <color key="sectionIndexBackgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.40992788460000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZF2-3Y-f8g">
@@ -154,19 +166,28 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WCR-px-kZJ" firstAttribute="top" secondItem="cDn-fU-aih" secondAttribute="bottom" id="5RE-hs-3vy"/>
-                            <constraint firstItem="WCR-px-kZJ" firstAttribute="trailing" secondItem="dVq-cp-Kc6" secondAttribute="trailing" id="B6Y-AN-mNT"/>
-                            <constraint firstAttribute="trailing" secondItem="WCR-px-kZJ" secondAttribute="trailing" id="SSe-qt-KsU"/>
-                            <constraint firstItem="WCR-px-kZJ" firstAttribute="leading" secondItem="z2n-Yp-ueu" secondAttribute="leading" id="bGd-f7-x8e"/>
-                            <constraint firstItem="dVq-cp-Kc6" firstAttribute="top" secondItem="WCR-px-kZJ" secondAttribute="bottom" id="lcm-ce-TcQ"/>
-                            <constraint firstItem="WCR-px-kZJ" firstAttribute="leading" secondItem="dVq-cp-Kc6" secondAttribute="leading" id="qsb-lK-Pzj"/>
-                            <constraint firstItem="dVq-cp-Kc6" firstAttribute="bottom" secondItem="xYb-fo-kYE" secondAttribute="top" id="xbC-ex-PdD"/>
+                            <constraint firstItem="dVq-cp-Kc6" firstAttribute="top" secondItem="cDn-fU-aih" secondAttribute="bottom" constant="60" id="2Pv-db-ayj"/>
+                            <constraint firstAttribute="bottom" secondItem="dVq-cp-Kc6" secondAttribute="bottom" id="Rr1-Pr-LIg"/>
+                            <constraint firstAttribute="trailing" secondItem="WCR-px-kZJ" secondAttribute="trailing" id="Smt-9g-h8E"/>
+                            <constraint firstItem="WCR-px-kZJ" firstAttribute="leading" secondItem="dVq-cp-Kc6" secondAttribute="leading" id="j0z-3a-5Bn"/>
+                            <constraint firstItem="WCR-px-kZJ" firstAttribute="top" secondItem="cDn-fU-aih" secondAttribute="bottom" id="sMz-Kl-3Ad"/>
+                            <constraint firstItem="WCR-px-kZJ" firstAttribute="trailing" secondItem="dVq-cp-Kc6" secondAttribute="trailing" id="swy-r5-kBV"/>
+                            <constraint firstItem="WCR-px-kZJ" firstAttribute="leading" secondItem="z2n-Yp-ueu" secondAttribute="leading" id="vle-LE-qPJ"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="COA-7f-HR8">
+                        <barButtonItem key="leftBarButtonItem" image="appIcone" id="SNU-lb-Mnz"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="appButton" destination="kxQ-ZR-iyq" id="tWy-V9-khX"/>
                         <outlet property="cateButton" destination="WAE-Ax-ZLX" id="mqD-jP-qdO"/>
+                        <outlet property="indAppView" destination="Oka-Lu-wqp" id="Elo-9Y-Zz0"/>
+                        <outlet property="indCateView" destination="U2I-Wg-rbO" id="uUf-Ke-L30"/>
                         <outlet property="tableView" destination="dVq-cp-Kc6" id="5S6-5R-rBF"/>
+                        <outlet property="viewApplication" destination="o14-aR-pfk" id="Mcy-Kz-b2W"/>
+                        <outlet property="viewCategory" destination="OlK-um-Uk6" id="bIE-yl-eEJ"/>
                         <outlet property="viewMiddleHome" destination="WCR-px-kZJ" id="DQq-Na-Y0w"/>
                         <segue destination="O8c-Va-xPN" kind="show" identifier="segueDetail" id="V30-aP-tpn"/>
                     </connections>
@@ -201,7 +222,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EGd-dt-Wbo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="goBack" id="jmX-7h-G9U">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="jmX-7h-G9U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -223,6 +244,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="appIcone" width="32" height="32"/>
         <image name="goBack" width="16" height="16"/>
     </resources>
 </document>
