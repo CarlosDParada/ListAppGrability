@@ -24,8 +24,13 @@ class ViewController: UIViewController {
             let stateSaveAll: Bool = CoreDataController().saveAllDataInCoreData(responseWS)
             if stateSaveAll == true{
                 /// User SAVE OK
-                let arrayLinksCD : Array = CoreDataController().getAllLink()
-                print("Link's in CoreData \(arrayLinksCD.count )")
+               // let arrayLinksCD : Array = CoreDataController().getAllLink()
+               // print("Link's in CoreData \(arrayLinksCD.count )")
+                
+                let arrayAppCD : Array = CoreDataController().getAllApps()
+                print("Link's in CoreData \(arrayAppCD.count )")
+                
+                
                 //self.performSegueWithIdentifier(AMSConstants.Menu.kSegueMenuLog, sender: nil)
             }else{
                // Error

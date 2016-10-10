@@ -144,6 +144,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D90D5B0E1DA76F9500D37D1E /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */,
+				D9DCF4761DA56B5800D95D47 /* Info.plist */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
 		D9DCF45E1DA56B5800D95D47 = {
 			isa = PBXGroup;
 			children = (
@@ -165,18 +174,16 @@
 		D9DCF4691DA56B5800D95D47 /* ListAppGrability */ = {
 			isa = PBXGroup;
 			children = (
-				D9DCF4D71DA597DE00D95D47 /* Model */,
-				D9DCF5171DA7257200D95D47 /* CoreData */,
-				D9DCF4B71DA56C8200D95D47 /* Utilities */,
-				D9DCF4D31DA570C600D95D47 /* Image */,
-				D9DCF4B61DA56C7B00D95D47 /* WebService */,
-				D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */,
 				D9DCF46C1DA56B5800D95D47 /* ViewController.swift */,
 				D9DCF46E1DA56B5800D95D47 /* Main.storyboard */,
 				D9DCF4B41DA56C2D00D95D47 /* MainIpad.storyboard */,
 				D9DCF4731DA56B5800D95D47 /* LaunchScreen.storyboard */,
-				D9DCF4761DA56B5800D95D47 /* Info.plist */,
-				D9DCF4711DA56B5800D95D47 /* Assets.xcassets */,
+				D9DCF4D71DA597DE00D95D47 /* Model */,
+				D9DCF4B71DA56C8200D95D47 /* Utilities */,
+				D9DCF4B61DA56C7B00D95D47 /* WebService */,
+				D9DCF5171DA7257200D95D47 /* CoreData */,
+				D9DCF4D31DA570C600D95D47 /* Image */,
+				D90D5B0E1DA76F9500D37D1E /* Control */,
 			);
 			path = ListAppGrability;
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 		D9DCF4D31DA570C600D95D47 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				D9DCF4711DA56B5800D95D47 /* Assets.xcassets */,
 				D9DCF4DA1DA5BA4800D95D47 /* Icone */,
 				D9DCF4D11DA570B900D95D47 /* iphoneLand@2x.png */,
 			);
