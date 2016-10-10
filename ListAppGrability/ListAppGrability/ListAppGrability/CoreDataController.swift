@@ -8,9 +8,8 @@
 
 import UIKit
 import CoreData
-
-import Alamofire
 import AlamofireImage
+import Alamofire
 
 // Retreive the managedObjectContext from AppDelegate
 

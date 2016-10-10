@@ -513,54 +513,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ListAppGrability/ViewController.swift"
-            timestampString = "497763317.417427"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ListAppGrability.ViewController.(viewDidLoad () -&gt; ()).(closure #1)"
-                  moduleName = "ListAppGrability"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/carlosparada/Developer/XCode/ListAppGrability/ListAppGrability/ListAppGrability/ListAppGrability/ViewController.swift"
-                  timestampString = "497509239.803242"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "1808">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ListAppGrability.ViewController.(viewDidLoad () -&gt; ()).(closure #2)"
-                  moduleName = "ListAppGrability"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/carlosparada/Developer/XCode/ListAppGrability/ListAppGrability/ListAppGrability/ListAppGrability/ViewController.swift"
-                  timestampString = "497509239.804891"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ListAppGrability/Models.swift"
             timestampString = "497507416.456424"
             startingColumnNumber = "9223372036854775807"
@@ -594,11 +546,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497760509.51241"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "244"
-            endingLineNumber = "244"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
             landmarkName = "saveLinkCD(rel:type:href:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -610,11 +562,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497760509.51241"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
             landmarkName = "saveLinkCD(rel:type:href:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -626,23 +578,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497760509.51241"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
-            landmarkName = "saveLinkCD(rel:type:href:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497760509.51241"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "239"
@@ -658,11 +594,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497760509.51241"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
+            landmarkName = "saveLinkCD(rel:type:href:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ListAppGrability/CoreDataController.swift"
+            timestampString = "497772329.222607"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "saveApplication(name:images:summary:price:currency:contentType:rights:title:linkHref:idUrl:idID:idBundle:artist:category:releaseDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -674,11 +626,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497760509.51241"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "saveApplication(name:images:summary:price:currency:contentType:rights:title:linkHref:idUrl:idID:idBundle:artist:category:releaseDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -690,11 +642,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497760509.51241"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "saveApplication(name:images:summary:price:currency:contentType:rights:title:linkHref:idUrl:idID:idBundle:artist:category:releaseDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -706,11 +658,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497760509.51241"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "downloadImage(imageUrl:callback:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -722,11 +674,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497760481.163191"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "saveAllDataInCoreData(responseWB:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -738,11 +690,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/ViewController.swift"
-            timestampString = "497763035.005914"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -786,11 +738,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497761660.147855"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "429"
-            endingLineNumber = "429"
+            startingLineNumber = "428"
+            endingLineNumber = "428"
             landmarkName = "deleteAllData(entity:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -802,11 +754,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/CoreDataController.swift"
-            timestampString = "497761660.147855"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "422"
-            endingLineNumber = "422"
+            startingLineNumber = "421"
+            endingLineNumber = "421"
             landmarkName = "deleteAllData(entity:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -818,11 +770,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/ViewController.swift"
-            timestampString = "497763035.005914"
+            timestampString = "497772329.222607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ListAppGrability/LAGHomeViewController.swift"
+            timestampString = "497778447.376214"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "tableView(tableView:cellForRowAtIndexPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ListAppGrability/LAGHomeViewController.swift"
+            timestampString = "497778447.376214"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "tableView(tableView:cellForRowAtIndexPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ListAppGrability/ViewController.swift"
+            timestampString = "497772362.019222"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -834,12 +834,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ListAppGrability/ViewController.swift"
-            timestampString = "497763734.712619"
+            timestampString = "497772364.112884"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "prepareForSegue(segue:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ListAppGrability/LAGHomeViewController.swift"
+            timestampString = "497778447.376214"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "tableView(tableView:cellForRowAtIndexPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ListAppGrability/LAGHomeViewController.swift"
+            timestampString = "497778447.376214"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "tableView(tableView:cellForRowAtIndexPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ListAppGrability/LAGHomeViewController.swift"
+            timestampString = "497778447.376214"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "tableView(tableView:cellForRowAtIndexPath:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

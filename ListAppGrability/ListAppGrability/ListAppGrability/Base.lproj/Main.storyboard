@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EGd-dt-Wbo">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Load Data-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ListAppGrability" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,6 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BPN-b1-m1W">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -33,6 +32,7 @@
                             <constraint firstAttribute="bottom" secondItem="BPN-b1-m1W" secondAttribute="bottom" constant="20" symbolic="YES" id="jcd-Jx-cKo"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Load Data" id="Y6G-q0-iam"/>
                     <connections>
                         <outlet property="textView1" destination="BPN-b1-m1W" id="GTS-fD-oc7"/>
                         <segue destination="tUN-6w-bci" kind="show" identifier="segueHome" id="Mov-MX-fOV"/>
@@ -40,12 +40,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-345" y="92"/>
+            <point key="canvasLocation" x="592.79999999999995" y="91.304347826086968"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Grability Test iOS-->
         <scene sceneID="ibs-Nf-PVw">
             <objects>
-                <viewController id="tUN-6w-bci" customClass="LAGHomeViewController" customModule="ListAppGrability" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Grability Test iOS" id="tUN-6w-bci" customClass="LAGHomeViewController" customModule="ListAppGrability" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cDn-fU-aih"/>
                         <viewControllerLayoutGuide type="bottom" id="xYb-fo-kYE"/>
@@ -53,12 +53,92 @@
                     <view key="view" contentMode="scaleToFill" id="z2n-Yp-ueu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCR-px-kZJ" customClass="GradientView" customModule="ListAppGrability" customModuleProvider="target">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oka-Lu-wqp" userLabel="ViewIndicator">
+                                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.32232661145185187" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Oka-Lu-wqp" secondAttribute="bottom" constant="75" id="A6h-Jl-adG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oka-Lu-wqp" secondAttribute="trailing" constant="-1" id="rf9-f7-ejf"/>
+                                    <constraint firstItem="Oka-Lu-wqp" firstAttribute="leading" secondItem="WCR-px-kZJ" secondAttribute="leading" constant="188" id="w5v-DQ-lbA"/>
+                                    <constraint firstItem="Oka-Lu-wqp" firstAttribute="top" secondItem="WCR-px-kZJ" secondAttribute="top" id="z42-Fa-jSw"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="20" sectionFooterHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="dVq-cp-Kc6">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="523" id="P4M-LA-0dB"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.40992788460000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZF2-3Y-f8g">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZF2-3Y-f8g" id="2iY-nd-4RJ">
+                                            <frame key="frameInset" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.40992788460000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tUN-6w-bci" id="8wi-3r-ErE"/>
+                                    <outlet property="delegate" destination="tUN-6w-bci" id="6Ev-xJ-bgU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WCR-px-kZJ" firstAttribute="top" secondItem="cDn-fU-aih" secondAttribute="bottom" id="5RE-hs-3vy"/>
+                            <constraint firstItem="WCR-px-kZJ" firstAttribute="trailing" secondItem="dVq-cp-Kc6" secondAttribute="trailing" id="B6Y-AN-mNT"/>
+                            <constraint firstAttribute="trailing" secondItem="WCR-px-kZJ" secondAttribute="trailing" id="SSe-qt-KsU"/>
+                            <constraint firstItem="WCR-px-kZJ" firstAttribute="leading" secondItem="z2n-Yp-ueu" secondAttribute="leading" id="bGd-f7-x8e"/>
+                            <constraint firstItem="dVq-cp-Kc6" firstAttribute="top" secondItem="WCR-px-kZJ" secondAttribute="bottom" id="lcm-ce-TcQ"/>
+                            <constraint firstItem="WCR-px-kZJ" firstAttribute="leading" secondItem="dVq-cp-Kc6" secondAttribute="leading" id="qsb-lK-Pzj"/>
+                            <constraint firstItem="dVq-cp-Kc6" firstAttribute="bottom" secondItem="xYb-fo-kYE" secondAttribute="top" id="xbC-ex-PdD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="dVq-cp-Kc6" id="5S6-5R-rBF"/>
+                        <outlet property="viewMiddleHome" destination="WCR-px-kZJ" id="DQq-Na-Y0w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVj-DR-dLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="93"/>
+            <point key="canvasLocation" x="1708" y="92.203898050974516"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6jd-xL-AAw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EGd-dt-Wbo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="goBack" id="jmX-7h-G9U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.29803921568627451" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                            <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.0" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AqP-Lj-vHu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Caw-hl-LZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346.39999999999998" y="91.304347826086968"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="goBack" width="64" height="64"/>
+    </resources>
 </document>
