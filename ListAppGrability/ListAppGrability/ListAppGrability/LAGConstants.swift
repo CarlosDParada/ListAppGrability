@@ -15,5 +15,11 @@ public struct LAGConstants{
    
         public static let debugON = true
         
+        
+        
+    }
+    public struct View{
+        public static let segueHome = "segueHome"
+    
     }
 }

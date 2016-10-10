@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BEEF6A41B5A3B714548B48A /* Pods_ListAppGrability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8AD50C544E1572BAD18710 /* Pods_ListAppGrability.framework */; };
+		D90F99F51DAB44D30008E975 /* LAGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F99F41DAB44D30008E975 /* LAGHomeViewController.swift */; };
 		D9DCF46B1DA56B5800D95D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */; };
 		D9DCF46D1DA56B5800D95D47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF46C1DA56B5800D95D47 /* ViewController.swift */; };
 		D9DCF4701DA56B5800D95D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DCF46E1DA56B5800D95D47 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		04CA8566D089500F64EFCE72 /* Pods-ListAppGrability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListAppGrability.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListAppGrability/Pods-ListAppGrability.debug.xcconfig"; sourceTree = "<group>"; };
 		4B8AD50C544E1572BAD18710 /* Pods_ListAppGrability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListAppGrability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BFB3B09005E118BDF53EB9 /* Pods-ListAppGrability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListAppGrability.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListAppGrability/Pods-ListAppGrability.release.xcconfig"; sourceTree = "<group>"; };
+		D90F99F41DAB44D30008E975 /* LAGHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGHomeViewController.swift; sourceTree = "<group>"; };
 		D9DCF4671DA56B5800D95D47 /* ListAppGrability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListAppGrability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DCF46C1DA56B5800D95D47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				D9DCF46C1DA56B5800D95D47 /* ViewController.swift */,
+				D90F99F41DAB44D30008E975 /* LAGHomeViewController.swift */,
 				D9DCF46E1DA56B5800D95D47 /* Main.storyboard */,
 				D9DCF4B41DA56C2D00D95D47 /* MainIpad.storyboard */,
 				D9DCF4731DA56B5800D95D47 /* LaunchScreen.storyboard */,
@@ -422,6 +425,7 @@
 				D9DCF46D1DA56B5800D95D47 /* ViewController.swift in Sources */,
 				D9DCF46B1DA56B5800D95D47 /* AppDelegate.swift in Sources */,
 				D9DCF5781DA7521000D95D47 /* Image+CoreDataProperties.swift in Sources */,
+				D90F99F51DAB44D30008E975 /* LAGHomeViewController.swift in Sources */,
 				D9DCF5741DA7521000D95D47 /* Response+CoreDataProperties.swift in Sources */,
 				D9DCF4BD1DA56CC300D95D47 /* LAGConstants.swift in Sources */,
 				D9DCF5771DA7521000D95D47 /* Image+CoreDataClass.swift in Sources */,

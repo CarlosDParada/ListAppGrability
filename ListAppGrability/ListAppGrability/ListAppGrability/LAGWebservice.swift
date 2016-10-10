@@ -45,12 +45,13 @@ public class LAGWebService: NSObject {
                // onSuccess(response.result.value == "true")
             case .Failure:
                   print("Success: \(response.result.isFailure)")
+                    onError("Success: \(response.result.isFailure)")
             }
             debugPrint(response)
             
-            if let json = response.result.value {
-                //print("JSON: \(json)")
-            }
+//            if let json = response.result.value {
+//                //print("JSON: \(json)")
+//            }
         }
         
     }
@@ -106,6 +107,8 @@ public class LAGWebService: NSObject {
      
      })
      }
+     var imageSet = Set<Image>()
+     imageSet.insert(newImage)
      newItem.setValue(imageSet, forKey: "image")
      
     //                let imageUrl = NSURL(fileURLWithPath: uniqueIamge.imageURL!.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!)
