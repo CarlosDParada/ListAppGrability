@@ -13,6 +13,7 @@
 		D90F99FC1DAB54260008E975 /* LAGCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F99FB1DAB54260008E975 /* LAGCellTableViewCell.swift */; };
 		D90F99FE1DAB63620008E975 /* UIImageView+AFNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F99FD1DAB63620008E975 /* UIImageView+AFNetworking.swift */; };
 		D90F9A001DAB7FAF0008E975 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F99FF1DAB7FAF0008E975 /* GradientView.swift */; };
+		D90F9A061DAB956F0008E975 /* LAGCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90F9A051DAB956F0008E975 /* LAGCategoryCell.xib */; };
 		D9DCF46B1DA56B5800D95D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */; };
 		D9DCF46D1DA56B5800D95D47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCF46C1DA56B5800D95D47 /* ViewController.swift */; };
 		D9DCF4701DA56B5800D95D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DCF46E1DA56B5800D95D47 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		D90F99FB1DAB54260008E975 /* LAGCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAGCellTableViewCell.swift; sourceTree = "<group>"; };
 		D90F99FD1DAB63620008E975 /* UIImageView+AFNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+AFNetworking.swift"; sourceTree = "<group>"; };
 		D90F99FF1DAB7FAF0008E975 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D90F9A051DAB956F0008E975 /* LAGCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAGCategoryCell.xib; sourceTree = "<group>"; };
 		D9DCF4671DA56B5800D95D47 /* ListAppGrability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListAppGrability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DCF46A1DA56B5800D95D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DCF46C1DA56B5800D95D47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,7 +192,7 @@
 				D9DCF4B41DA56C2D00D95D47 /* MainIpad.storyboard */,
 				D9DCF4731DA56B5800D95D47 /* LaunchScreen.storyboard */,
 				D90F99F91DAB4EBD0008E975 /* LAGCell.xib */,
-				D90F99FF1DAB7FAF0008E975 /* GradientView.swift */,
+				D90F9A051DAB956F0008E975 /* LAGCategoryCell.xib */,
 				D90F99FB1DAB54260008E975 /* LAGCellTableViewCell.swift */,
 				D9DCF4D71DA597DE00D95D47 /* Model */,
 				D9DCF4B71DA56C8200D95D47 /* Utilities */,
@@ -213,6 +215,7 @@
 		D9DCF4B71DA56C8200D95D47 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D90F99FF1DAB7FAF0008E975 /* GradientView.swift */,
 				D90F99FD1DAB63620008E975 /* UIImageView+AFNetworking.swift */,
 				D9DCF4BA1DA56CB200D95D47 /* LAGColors.swift */,
 				D9DCF4BC1DA56CC300D95D47 /* LAGConstants.swift */,
@@ -370,6 +373,7 @@
 				D9DCF4EC1DA5BA5400D95D47 /* Icon-App-20x20@1x.png in Resources */,
 				D9DCF4F41DA5BA5400D95D47 /* Icon-App-40x40@3x.png in Resources */,
 				D9DCF4F31DA5BA5400D95D47 /* Icon-App-40x40@2x.png in Resources */,
+				D90F9A061DAB956F0008E975 /* LAGCategoryCell.xib in Resources */,
 				D9DCF4EF1DA5BA5400D95D47 /* Icon-App-29x29@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

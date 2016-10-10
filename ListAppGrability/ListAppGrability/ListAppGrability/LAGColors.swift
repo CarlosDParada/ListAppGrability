@@ -40,7 +40,7 @@ extension UIColor {
     }
     public static var mediumBlue : UIColor {
         get {
-            return UIColor(red: 17/255.0, green: 43/255.0, blue: 72/255.0, alpha: 1.0)
+            return UIColor(red: 0/255.0, green: 153/255.0, blue: 153/255.0, alpha: 1.0)
         }
     }
     public static var lightBlue : UIColor {

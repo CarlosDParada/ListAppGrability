@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myLAGCategoryCell" id="C3d-D9-4OZ" customClass="LAGCAtegoryCellTableViewCell" customModule="ListAppGrability" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C3d-D9-4OZ" id="aiS-2c-9dv">
+                <frame key="frameInset" width="375" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEY-ES-zmn">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="odj-Mu-2N4">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="ypg-Mx-13q"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinterest" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIX-n0-RAe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="jXc-ap-sNg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.33239486369999999" green="0.33239486369999999" blue="0.33239486369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-g2-cW1"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RIX-n0-RAe" secondAttribute="trailing" constant="27" id="MTi-5j-SoO"/>
+                            <constraint firstItem="RIX-n0-RAe" firstAttribute="top" secondItem="hEY-ES-zmn" secondAttribute="top" constant="11" id="QAe-DT-jKO"/>
+                            <constraint firstItem="odj-Mu-2N4" firstAttribute="leading" secondItem="hEY-ES-zmn" secondAttribute="leadingMargin" id="R8i-SA-vGW"/>
+                            <constraint firstItem="nRb-g2-cW1" firstAttribute="centerY" secondItem="RIX-n0-RAe" secondAttribute="centerY" id="UFj-yK-DcV"/>
+                            <constraint firstItem="odj-Mu-2N4" firstAttribute="centerY" secondItem="hEY-ES-zmn" secondAttribute="centerY" id="XDd-16-fM6"/>
+                            <constraint firstItem="nRb-g2-cW1" firstAttribute="trailing" secondItem="hEY-ES-zmn" secondAttribute="trailingMargin" id="h2H-QO-G5B"/>
+                            <constraint firstItem="odj-Mu-2N4" firstAttribute="centerY" secondItem="RIX-n0-RAe" secondAttribute="centerY" id="i3E-Cy-U3I"/>
+                            <constraint firstItem="odj-Mu-2N4" firstAttribute="top" secondItem="hEY-ES-zmn" secondAttribute="top" constant="4" id="x0W-XF-8uC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hEY-ES-zmn" firstAttribute="centerY" secondItem="aiS-2c-9dv" secondAttribute="centerY" id="HJ8-P0-36q"/>
+                    <constraint firstItem="hEY-ES-zmn" firstAttribute="centerX" secondItem="aiS-2c-9dv" secondAttribute="centerX" id="MME-bX-cey"/>
+                    <constraint firstItem="hEY-ES-zmn" firstAttribute="leading" secondItem="aiS-2c-9dv" secondAttribute="leadingMargin" constant="-4" id="e03-yE-WsJ"/>
+                    <constraint firstItem="hEY-ES-zmn" firstAttribute="top" secondItem="aiS-2c-9dv" secondAttribute="topMargin" constant="-6" id="mqi-6K-P8x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+            <connections>
+                <outlet property="butonHelp" destination="nRb-g2-cW1" id="iZj-zz-5zk"/>
+                <outlet property="imageCateView" destination="odj-Mu-2N4" id="lTc-SK-bGK"/>
+                <outlet property="nameCateLabel" destination="RIX-n0-RAe" id="Idd-rB-rzX"/>
+                <outlet property="viewBack" destination="hEY-ES-zmn" id="y8f-M3-RmT"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="-203"/>
+        </tableViewCell>
+    </objects>
+</document>

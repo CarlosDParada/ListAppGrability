@@ -409,6 +409,32 @@ public class CoreDataController: NSObject {
         }
         return listLinkCD
     }
+    //MARK:  GetApplications
+    func getAllCategory() -> Array<Category> {
+        
+        var listcCategoryCD : Array = [Category]()
+        // Initialize Fetch Request
+        let fetchRequest = NSFetchRequest()
+        // Create Entity Description
+        let entityDescription =  NSEntityDescription.entityForName("Category",
+                                                                   inManagedObjectContext: self.managedObjectContext)
+        
+        // Configure Fetch Request
+        fetchRequest.entity = entityDescription
+        
+        do {
+            let result = try self.managedObjectContext.executeFetchRequest(fetchRequest)
+            for managedObject in result{
+                listcCategoryCD.append(managedObject as! Category)
+            }
+            
+        } catch {
+            let fetchError = error as NSError
+            print(fetchError)
+        }
+        return listcCategoryCD
+    }
+    //MARK: DeleteAll
     func deleteAllData(entity: String)
     {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate

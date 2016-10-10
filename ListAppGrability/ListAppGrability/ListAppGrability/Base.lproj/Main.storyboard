@@ -33,9 +33,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Load Data" id="Y6G-q0-iam"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="textView1" destination="BPN-b1-m1W" id="GTS-fD-oc7"/>
-                        <segue destination="tUN-6w-bci" kind="show" identifier="segueHome" id="Mov-MX-fOV"/>
+                        <segue destination="tUN-6w-bci" kind="show" identifier="segueHome" id="I0F-f9-H5N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,13 +57,72 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCR-px-kZJ" customClass="GradientView" customModule="ListAppGrability" customModuleProvider="target">
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oka-Lu-wqp" userLabel="ViewIndicator">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oka-Lu-wqp" userLabel="indCat">
                                         <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2I-Wg-rbO" userLabel="indApps">
+                                        <frame key="frameInset" width="188" height="5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OlK-um-Uk6" userLabel="Category">
+                                        <frame key="frameInset" minX="34" minY="18" width="120" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAE-Ax-ZLX">
+                                                <frame key="frameInset" width="120" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                <state key="normal" title="Category">
+                                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                                <color key="value" red="0.99676724137931039" green="0.99676724137931039" blue="0.99676724137931039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o14-aR-pfk" userLabel="Apps">
+                                        <frame key="frameInset" minX="222" minY="18" width="120" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-ZR-iyq">
+                                                <frame key="frameInset" width="120" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                <state key="normal" title="Application">
+                                                    <color key="titleColor" red="0.066666666669999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.32232661145185187" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Oka-Lu-wqp" secondAttribute="bottom" constant="75" id="A6h-Jl-adG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oka-Lu-wqp" secondAttribute="bottom" constant="55" id="A6h-Jl-adG"/>
                                     <constraint firstAttribute="trailing" secondItem="Oka-Lu-wqp" secondAttribute="trailing" constant="-1" id="rf9-f7-ejf"/>
                                     <constraint firstItem="Oka-Lu-wqp" firstAttribute="leading" secondItem="WCR-px-kZJ" secondAttribute="leading" constant="188" id="w5v-DQ-lbA"/>
                                     <constraint firstItem="Oka-Lu-wqp" firstAttribute="top" secondItem="WCR-px-kZJ" secondAttribute="top" id="z42-Fa-jSw"/>
@@ -72,7 +132,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="523" id="P4M-LA-0dB"/>
+                                    <constraint firstAttribute="height" constant="543" id="P4M-LA-0dB"/>
                                 </constraints>
                                 <color key="sectionIndexBackgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.40992788460000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -104,26 +164,50 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="appButton" destination="kxQ-ZR-iyq" id="tWy-V9-khX"/>
+                        <outlet property="cateButton" destination="WAE-Ax-ZLX" id="mqD-jP-qdO"/>
                         <outlet property="tableView" destination="dVq-cp-Kc6" id="5S6-5R-rBF"/>
                         <outlet property="viewMiddleHome" destination="WCR-px-kZJ" id="DQq-Na-Y0w"/>
+                        <segue destination="O8c-Va-xPN" kind="show" identifier="segueDetail" id="V30-aP-tpn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVj-DR-dLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708" y="92.203898050974516"/>
+            <point key="canvasLocation" x="1404" y="90.404797601199405"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7zc-AL-TU7">
+            <objects>
+                <viewController id="O8c-Va-xPN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5gH-OE-Fbu"/>
+                        <viewControllerLayoutGuide type="bottom" id="mog-yF-JEw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N1U-id-CSk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e4S-Sg-nPW">
+                        <barButtonItem key="leftBarButtonItem" image="goBack" id="j4t-Iq-KFg"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cqm-Su-zlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2231" y="91"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6jd-xL-AAw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EGd-dt-Wbo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="goBack" id="jmX-7h-G9U">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="goBack" id="jmX-7h-G9U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.29803921568627451" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.050980392159999999" green="0.56078431370000004" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                             <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textShadowColor" red="0.0" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -139,6 +223,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="goBack" width="64" height="64"/>
+        <image name="goBack" width="16" height="16"/>
     </resources>
 </document>

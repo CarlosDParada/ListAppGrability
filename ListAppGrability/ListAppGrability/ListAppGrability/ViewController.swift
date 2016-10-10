@@ -13,13 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var textView1: UITextView!
     var arrayAppCD : [Application]!
     
+    var arrayCategoryCD : [Category]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var responseWS : ResponseModel!
         
         CoreDataController().deleteAllData("Application")
         CoreDataController().deleteAllData("Link")
-        
+        CoreDataController().deleteAllData("Response")
+        CoreDataController().deleteAllData("Image")
         CoreDataController().deleteAllData("Response")
         
         LAGWebService.isServerAlive({ (respondeJSON) in
@@ -33,6 +36,8 @@ class ViewController: UIViewController {
             if stateSaveAll == true{
 
                 self.arrayAppCD = CoreDataController().getAllApps()
+                self.arrayCategoryCD   = CoreDataController().getAllCategory()
+                
                 let arrayResponse : Array = CoreDataController().getResponse()
     
             
@@ -62,8 +67,8 @@ class ViewController: UIViewController {
             let homeViewController = segue.destinationViewController as! LAGHomeViewController
            
             homeViewController.arrayAppCD = self.arrayAppCD
-            
-            
+            homeViewController.arrayDirtCategoryCD = self.arrayCategoryCD
+
             
         }
     }
