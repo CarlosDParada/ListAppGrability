@@ -73,6 +73,7 @@ class LAGCAtegoryCellTableViewCell: UITableViewCell {
 }
 
 class LAGDetailCell: UITableViewCell {
+    var cell: UITableViewCell!
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descritionLabel: UIView!
@@ -82,8 +83,8 @@ class LAGDetailCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.viewBack.clipsToBounds = true
-        self.viewBack.layer.cornerRadius = 10
+//        self.cell.viewBack.clipsToBounds = true
+//        self.cell.viewBack.layer.cornerRadius = 10
     }
     
  

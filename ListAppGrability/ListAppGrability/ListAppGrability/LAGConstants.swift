@@ -11,7 +11,7 @@ import Alamofire
 
 public struct LAGConstants{
     public struct Webservice{
-        public static var PathInit = "https://itunes.apple.com/us/rss/topfreeapplications/limit=180/json" // Base Path
+        public static var PathInit = "https://itunes.apple.com/us/rss/topfreeapplications/limit=50/json" // Base Path
    
         public static let debugON = true
         

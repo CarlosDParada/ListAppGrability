@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LAGDetailViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
+class LAGDetailViewController: UIViewController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
